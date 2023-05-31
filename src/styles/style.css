@@ -1,0 +1,231 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+body{
+    margin: 0;
+}
+.item {
+    background: cadetblue;
+    display: flex;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1900px;
+}
+.content{
+    background: white;
+    color: blue;
+}
+p{
+    margin: auto 0;
+}
+@media (max-width: 767px) {
+    .item {
+        height: 40px;
+        text-align: left;
+        padding: 0 20px;
+    }
+    .item {
+        margin-top: 5px;
+    }
+    .block-second{
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    .block-first .item:first-child {
+        margin-top: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .block-third .item:last-child{
+        margin: 0 0 10px 0;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+    }
+    section{
+        flex-direction: column;
+        padding: 15px 25px;
+    }
+    button{
+        height: 30px;
+        width: 30px;
+    }
+    .block-third .item:first-child{
+        margin: 15px 0;
+    }
+    .hide-item{
+        display: none;
+    }
+    .itemShow {
+        display: flex;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .content p {
+        font-size: 13px;
+    }
+    .content{
+        text-align: center;
+        width: 100%;
+        margin-top: 15px;
+        padding: 20px 10px;
+    }
+}
+@media (min-width: 768px) {
+    .item {
+        height: 40px;
+        margin-top: 15px;
+        text-align: left;
+        padding: 0 20px;
+        width: 100%;
+    }
+    section {
+        flex-wrap: wrap;
+    }
+    .block-first,
+    .block-second {
+        display: flex;
+    }
+    button {
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width:1279px) {
+    section{
+        padding: 30px 25px;
+    }
+    .block-second .item:last-child,
+    .block-first .item:first-child {
+        margin-top: 0;
+    }
+    .block-third .item:last-child{
+        padding: 5px 20px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .block-first .item:first-child {
+        width: 40%;
+    }
+    .block-first .item {
+        width: 55%;
+    }
+    .block-second,
+    .block-first{
+        width: 50%;
+    }
+    .block-first{
+        flex-direction: column;
+    }
+    .block-second{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .block-second .item {
+        width: auto;
+    }
+    .block-second .item:first-child {
+        width: 10%;
+    }
+    .block-second .item{
+        width: 15%;
+    }
+    .block-third{
+        display: contents;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .content p {
+        font-size: 13px;
+    }
+    .content{
+        text-align: center;
+        width: 46%;
+        margin-top: 15px;
+        padding: 10px;
+    }
+}
+@media (min-width: 1280px) {
+    section{
+        padding: 30px 10%;
+    }
+
+    .block-first{
+        width: 80%;
+    }
+    .block-second {
+        width: 20%;
+    }
+    .block-first .item:first-child{
+        width: 270px;
+        margin: 0;
+        flex-shrink: 0;
+    }
+    .block-first .item{
+        width: 100%;
+        margin: 0 0 0 15px;
+    }
+    .block-second .item:first-child{
+        width: 30%;
+    }
+    .block-second .item{
+        width: 70%;
+        margin: 0 0 0 15px;
+    }
+    .block-third .item:first-child{
+        width: 270px;
+        flex-shrink: 0;
+        height: 400px;
+        margin-left: 0;
+    }
+    .block-third .item{
+        width: 100%;
+        margin-left: 15px;
+        height: auto;
+        min-height: 450px;
+    }
+    .block-third{
+        display: flex;
+        width: 100%;
+    }
+    .block-third .item p{
+        margin-top: 20px;
+    }
+    .block-third .item:last-child{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 20px 20px 10px;
+        justify-content: space-between;
+    }
+    .content{
+        width: 25%;
+        background: white;
+        color: blue;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 14px;
+        padding: 10px 20px;
+    }
+    h1 {
+        font-size: 16px;
+        margin: 0;
+    }
+    .content p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
